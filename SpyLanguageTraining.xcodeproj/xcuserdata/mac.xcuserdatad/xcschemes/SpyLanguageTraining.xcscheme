@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "047B86D21CF1EC1F000E0275"
+               BuildableName = "SpyLanguageTraining.app"
+               BlueprintName = "SpyLanguageTraining"
+               ReferencedContainer = "container:SpyLanguageTraining.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "047B86E61CF1EC1F000E0275"
+               BuildableName = "SpyLanguageTrainingTests.xctest"
+               BlueprintName = "SpyLanguageTrainingTests"
+               ReferencedContainer = "container:SpyLanguageTraining.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "047B86D21CF1EC1F000E0275"
+            BuildableName = "SpyLanguageTraining.app"
+            BlueprintName = "SpyLanguageTraining"
+            ReferencedContainer = "container:SpyLanguageTraining.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +61,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "047B86D21CF1EC1F000E0275"
+            BuildableName = "SpyLanguageTraining.app"
+            BlueprintName = "SpyLanguageTraining"
+            ReferencedContainer = "container:SpyLanguageTraining.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +80,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "047B86D21CF1EC1F000E0275"
+            BuildableName = "SpyLanguageTraining.app"
+            BlueprintName = "SpyLanguageTraining"
+            ReferencedContainer = "container:SpyLanguageTraining.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

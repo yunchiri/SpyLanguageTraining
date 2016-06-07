@@ -1,25 +1,142 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KhN-KE-Ydk">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Quiz Collection View Controller-->
+        <scene sceneID="Jcv-M2-Wkt">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <collectionViewController id="KhN-KE-Ydk" customClass="QuizCollectionViewController" customModule="SpyLanguageTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="OIY-P7-bN0">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewLayout key="collectionViewLayout" id="X3T-Hv-P8J" customClass="TisprCardStackViewLayout" customModule="TisprCardStack"/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="QuizCellIdentifier" id="jIe-id-CmC" customClass="QuizCell" customModule="SpyLanguageTraining" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="266"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="280" height="266"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5HE-yK-ai0">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="show me th emoney" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTQ-5c-Ubq">
+                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="8" y="66" width="264" height="21"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="247" id="nCS-Ib-JfF">
+                                                    <variation key="widthClass=compact" constant="154"/>
+                                                </constraint>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="MTQ-5c-Ubq"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="nCS-Ib-JfF"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="MTQ-5c-Ubq"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="nCS-Ib-JfF"/>
+                                                </mask>
+                                            </variation>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X4f-Gt-pIf">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="114" id="SIu-9b-ZZH"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="SIu-9b-ZZH"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="SIu-9b-ZZH"/>
+                                                </mask>
+                                            </variation>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="X4f-Gt-pIf" firstAttribute="top" secondItem="5HE-yK-ai0" secondAttribute="bottom" constant="1" id="Bbz-JI-vKi">
+                                        <variation key="widthClass=compact" constant="-2"/>
+                                    </constraint>
+                                    <constraint firstAttribute="bottomMargin" secondItem="X4f-Gt-pIf" secondAttribute="bottom" constant="-8" id="FAl-TV-tUe"/>
+                                    <constraint firstItem="X4f-Gt-pIf" firstAttribute="width" secondItem="5HE-yK-ai0" secondAttribute="height" multiplier="20:11" id="Mgw-tm-rGJ"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="X4f-Gt-pIf" secondAttribute="trailing" constant="-8" id="T1M-v0-Xy2"/>
+                                    <constraint firstItem="5HE-yK-ai0" firstAttribute="leading" secondItem="jIe-id-CmC" secondAttribute="leading" id="UnE-yB-0o0"/>
+                                    <constraint firstItem="X4f-Gt-pIf" firstAttribute="leading" secondItem="jIe-id-CmC" secondAttribute="leadingMargin" constant="-8" id="Z9M-85-Z9s"/>
+                                    <constraint firstAttribute="trailing" secondItem="5HE-yK-ai0" secondAttribute="trailing" id="eR0-jf-Aez"/>
+                                    <constraint firstItem="5HE-yK-ai0" firstAttribute="top" secondItem="jIe-id-CmC" secondAttribute="top" id="g4t-rJ-9Hg"/>
+                                </constraints>
+                                <size key="customSize" width="280" height="266"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="5HE-yK-ai0"/>
+                                        <exclude reference="X4f-Gt-pIf"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="UnE-yB-0o0"/>
+                                        <exclude reference="eR0-jf-Aez"/>
+                                        <exclude reference="g4t-rJ-9Hg"/>
+                                        <exclude reference="Bbz-JI-vKi"/>
+                                        <exclude reference="FAl-TV-tUe"/>
+                                        <exclude reference="Mgw-tm-rGJ"/>
+                                        <exclude reference="T1M-v0-Xy2"/>
+                                        <exclude reference="Z9M-85-Z9s"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="5HE-yK-ai0"/>
+                                        <include reference="X4f-Gt-pIf"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="UnE-yB-0o0"/>
+                                        <include reference="eR0-jf-Aez"/>
+                                        <include reference="g4t-rJ-9Hg"/>
+                                        <include reference="Bbz-JI-vKi"/>
+                                        <include reference="FAl-TV-tUe"/>
+                                        <include reference="Mgw-tm-rGJ"/>
+                                        <include reference="T1M-v0-Xy2"/>
+                                        <include reference="Z9M-85-Z9s"/>
+                                    </mask>
+                                </variation>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="KhN-KE-Ydk" id="b1J-Fk-ikV"/>
+                            <outlet property="delegate" destination="KhN-KE-Ydk" id="lLH-8p-OKO"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KIE-hl-KNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1612.5" y="933"/>
         </scene>
     </scenes>
 </document>

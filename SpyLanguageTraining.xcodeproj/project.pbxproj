@@ -13,6 +13,12 @@
 		047B86DE1CF1EC1F000E0275 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047B86DD1CF1EC1F000E0275 /* Assets.xcassets */; };
 		047B86E11CF1EC1F000E0275 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047B86DF1CF1EC1F000E0275 /* LaunchScreen.storyboard */; };
 		047B86EC1CF1EC1F000E0275 /* SpyLanguageTrainingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B86EB1CF1EC1F000E0275 /* SpyLanguageTrainingTests.swift */; };
+		047B86F81CF1F8B6000E0275 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B86F71CF1F8B6000E0275 /* QuizViewController.swift */; };
+		047B86FD1CF35F38000E0275 /* zaza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047B86FC1CF35F38000E0275 /* zaza.jpg */; };
+		04ACD1231D00669200430A63 /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04ACD1221D00669200430A63 /* QuestionView.xib */; };
+		04CDBBAE1CF5E688002F7016 /* QuizCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDBBAD1CF5E688002F7016 /* QuizCollectionViewController.swift */; };
+		04CDBBB01CF5E771002F7016 /* QuizCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDBBAF1CF5E771002F7016 /* QuizCell.swift */; };
+		89E2A672ACA6D9B2498F2E6E /* Pods_SpyLanguageTraining.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD38BCA5CA8CF8CCF138A4A1 /* Pods_SpyLanguageTraining.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,15 @@
 		047B86E71CF1EC1F000E0275 /* SpyLanguageTrainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpyLanguageTrainingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		047B86EB1CF1EC1F000E0275 /* SpyLanguageTrainingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyLanguageTrainingTests.swift; sourceTree = "<group>"; };
 		047B86ED1CF1EC1F000E0275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047B86F71CF1F8B6000E0275 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		047B86FC1CF35F38000E0275 /* zaza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zaza.jpg; sourceTree = "<group>"; };
+		04ACD1221D00669200430A63 /* QuestionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionView.xib; sourceTree = "<group>"; };
+		04CDBBAD1CF5E688002F7016 /* QuizCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewController.swift; sourceTree = "<group>"; };
+		04CDBBAF1CF5E771002F7016 /* QuizCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCell.swift; sourceTree = "<group>"; };
+		6C909A0A93076605C76175FF /* Pods-SpyLanguageTraining.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyLanguageTraining.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpyLanguageTraining/Pods-SpyLanguageTraining.release.xcconfig"; sourceTree = "<group>"; };
+		8D393417C98FC2C7D24D81CA /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92BE274339DD945EF32808B6 /* Pods-SpyLanguageTraining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyLanguageTraining.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpyLanguageTraining/Pods-SpyLanguageTraining.debug.xcconfig"; sourceTree = "<group>"; };
+		BD38BCA5CA8CF8CCF138A4A1 /* Pods_SpyLanguageTraining.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpyLanguageTraining.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89E2A672ACA6D9B2498F2E6E /* Pods_SpyLanguageTraining.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +78,8 @@
 				047B86D51CF1EC1F000E0275 /* SpyLanguageTraining */,
 				047B86EA1CF1EC1F000E0275 /* SpyLanguageTrainingTests */,
 				047B86D41CF1EC1F000E0275 /* Products */,
+				D251CF37148FB4707BAD5BF4 /* Frameworks */,
+				76D6AF578DB4C274D0469147 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +95,15 @@
 		047B86D51CF1EC1F000E0275 /* SpyLanguageTraining */ = {
 			isa = PBXGroup;
 			children = (
+				047B86FC1CF35F38000E0275 /* zaza.jpg */,
+				047B86F61CF1F85D000E0275 /* ViewController */,
 				047B86D61CF1EC1F000E0275 /* AppDelegate.swift */,
 				047B86D81CF1EC1F000E0275 /* ViewController.swift */,
 				047B86DA1CF1EC1F000E0275 /* Main.storyboard */,
 				047B86DD1CF1EC1F000E0275 /* Assets.xcassets */,
 				047B86DF1CF1EC1F000E0275 /* LaunchScreen.storyboard */,
 				047B86E21CF1EC1F000E0275 /* Info.plist */,
+				04ACD1221D00669200430A63 /* QuestionView.xib */,
 			);
 			path = SpyLanguageTraining;
 			sourceTree = "<group>";
@@ -96,6 +117,34 @@
 			path = SpyLanguageTrainingTests;
 			sourceTree = "<group>";
 		};
+		047B86F61CF1F85D000E0275 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				047B86F71CF1F8B6000E0275 /* QuizViewController.swift */,
+				04CDBBAD1CF5E688002F7016 /* QuizCollectionViewController.swift */,
+				04CDBBAF1CF5E771002F7016 /* QuizCell.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		76D6AF578DB4C274D0469147 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92BE274339DD945EF32808B6 /* Pods-SpyLanguageTraining.debug.xcconfig */,
+				6C909A0A93076605C76175FF /* Pods-SpyLanguageTraining.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D251CF37148FB4707BAD5BF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D393417C98FC2C7D24D81CA /* Pods.framework */,
+				BD38BCA5CA8CF8CCF138A4A1 /* Pods_SpyLanguageTraining.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +152,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 047B86F01CF1EC1F000E0275 /* Build configuration list for PBXNativeTarget "SpyLanguageTraining" */;
 			buildPhases = (
+				7532CA3E1156D3F069BDB116 /* [CP] Check Pods Manifest.lock */,
 				047B86CF1CF1EC1F000E0275 /* Sources */,
 				047B86D01CF1EC1F000E0275 /* Frameworks */,
 				047B86D11CF1EC1F000E0275 /* Resources */,
+				9EBDFD212C28809D3365B007 /* [CP] Embed Pods Frameworks */,
+				3A097AC6474850A8C7BDB61F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,8 +229,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04ACD1231D00669200430A63 /* QuestionView.xib in Resources */,
 				047B86E11CF1EC1F000E0275 /* LaunchScreen.storyboard in Resources */,
 				047B86DE1CF1EC1F000E0275 /* Assets.xcassets in Resources */,
+				047B86FD1CF35F38000E0275 /* zaza.jpg in Resources */,
 				047B86DC1CF1EC1F000E0275 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,12 +246,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A097AC6474850A8C7BDB61F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpyLanguageTraining/Pods-SpyLanguageTraining-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7532CA3E1156D3F069BDB116 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9EBDFD212C28809D3365B007 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpyLanguageTraining/Pods-SpyLanguageTraining-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		047B86CF1CF1EC1F000E0275 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047B86F81CF1F8B6000E0275 /* QuizViewController.swift in Sources */,
+				04CDBBAE1CF5E688002F7016 /* QuizCollectionViewController.swift in Sources */,
 				047B86D91CF1EC1F000E0275 /* ViewController.swift in Sources */,
+				04CDBBB01CF5E771002F7016 /* QuizCell.swift in Sources */,
 				047B86D71CF1EC1F000E0275 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +430,7 @@
 		};
 		047B86F11CF1EC1F000E0275 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92BE274339DD945EF32808B6 /* Pods-SpyLanguageTraining.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpyLanguageTraining/Info.plist;
@@ -336,6 +442,7 @@
 		};
 		047B86F21CF1EC1F000E0275 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C909A0A93076605C76175FF /* Pods-SpyLanguageTraining.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpyLanguageTraining/Info.plist;
@@ -388,6 +495,7 @@
 				047B86F21CF1EC1F000E0275 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		047B86F31CF1EC1F000E0275 /* Build configuration list for PBXNativeTarget "SpyLanguageTrainingTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +504,7 @@
 				047B86F51CF1EC1F000E0275 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
