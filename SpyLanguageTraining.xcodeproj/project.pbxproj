@@ -95,6 +95,7 @@
 		047B86D51CF1EC1F000E0275 /* SpyLanguageTraining */ = {
 			isa = PBXGroup;
 			children = (
+				0483EE721D12EBAB00AAC6C9 /* Koloda */,
 				047B86FC1CF35F38000E0275 /* zaza.jpg */,
 				047B86F61CF1F85D000E0275 /* ViewController */,
 				047B86D61CF1EC1F000E0275 /* AppDelegate.swift */,
@@ -125,6 +126,13 @@
 				04CDBBAF1CF5E771002F7016 /* QuizCell.swift */,
 			);
 			name = ViewController;
+			sourceTree = "<group>";
+		};
+		0483EE721D12EBAB00AAC6C9 /* Koloda */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Koloda;
 			sourceTree = "<group>";
 		};
 		76D6AF578DB4C274D0469147 /* Pods */ = {

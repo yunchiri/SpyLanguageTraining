@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KhN-KE-Ydk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XGB-eZ-UN8">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -8,6 +8,74 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Quiz View Controller-->
+        <scene sceneID="VW7-BP-R7z">
+            <objects>
+                <viewController id="XGB-eZ-UN8" customClass="QuizViewController" customModule="SpyLanguageTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bxD-v4-JN5"/>
+                        <viewControllerLayoutGuide type="bottom" id="fnF-tw-Fyl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nSB-Xj-XLM">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NMe-fa-P3t" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Cta-pc-xEA"/>
+                                    <constraint firstAttribute="height" constant="300" id="aPf-Ix-pGP">
+                                        <variation key="widthClass=compact" constant="320"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Cta-pc-xEA"/>
+                                        <exclude reference="aPf-Ix-pGP"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Cta-pc-xEA"/>
+                                        <include reference="aPf-Ix-pGP"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15686274509803921" green="0.2196078431372549" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="NMe-fa-P3t" firstAttribute="centerY" secondItem="nSB-Xj-XLM" secondAttribute="centerY" id="3T6-OW-iyI">
+                                <variation key="widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="NMe-fa-P3t" firstAttribute="centerX" secondItem="nSB-Xj-XLM" secondAttribute="centerX" id="8Q9-GB-QOM"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="NMe-fa-P3t"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="3T6-OW-iyI"/>
+                                <exclude reference="8Q9-GB-QOM"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="NMe-fa-P3t"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="3T6-OW-iyI"/>
+                                <include reference="8Q9-GB-QOM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="kolodaView" destination="NMe-fa-P3t" id="Ta0-v9-Gc8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PTb-EV-Lys" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="197"/>
+        </scene>
         <!--Quiz Collection View Controller-->
         <scene sceneID="Jcv-M2-Wkt">
             <objects>

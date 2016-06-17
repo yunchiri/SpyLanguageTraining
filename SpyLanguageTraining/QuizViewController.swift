@@ -11,7 +11,8 @@ import Koloda
 import pop
 import CountdownLabel
 
-private let numberOfCards: UInt = 5
+
+private let numberOfCards: UInt = 50
 private let frameAnimationSpringBounciness: CGFloat = 9
 private let frameAnimationSpringSpeed: CGFloat = 16
 private let kolodaCountOfVisibleCards = 2
@@ -23,29 +24,32 @@ class QuizViewController: UIViewController {
     
     @IBOutlet weak var kolodaView: KolodaView!
     
-    @IBOutlet weak var countDownLabel: CountdownLabel!
+//    @IBOutlet weak var countDownLabel: CountdownLabel!
     
     
     //MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        kolodaView.alphaValueSemiTransparent = kolodaAlphaValueSemiTransparent
-        kolodaView.countOfVisibleCards = kolodaCountOfVisibleCards
+//        kolodaView.alphaValueSemiTransparent = kolodaAlphaValueSemiTransparent
+//        kolodaView.countOfVisibleCards = kolodaCountOfVisibleCards
+        
         kolodaView.delegate = self
         kolodaView.dataSource = self
 //        kolodaView.animator = BackgroundKolodaAnimator(koloda: kolodaView)
         
         self.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
         
+        kolodaView.layer.cornerRadius = 20
+        kolodaView.layer.shadowColor = UIColor.blackColor().CGColor
         
-        countDownLabel.setCountDownTime(60)
-        countDownLabel.timeFormat = "mm:ss"
-//        countDownLabel.animationType = .Pixelate
-        countDownLabel.countdownDelegate = self
-        countDownLabel.start() { [unowned self] in
-            self.countDownLabel.text = "timer finished."
+//        countDownLabel.setCountDownTime(60)
+//        countDownLabel.timeFormat = "mm:ss"
+////        countDownLabel.animationType = .Pixelate
+//        countDownLabel.countdownDelegate = self
+//        countDownLabel.start() { [unowned self] in
+//            self.countDownLabel.text = "timer finished."
         
-        }
+//        }
     }
     
     
@@ -93,9 +97,16 @@ extension QuizViewController: KolodaViewDataSource {
     }
     
     func koloda(koloda: KolodaView, viewForCardAtIndex index: UInt) -> UIView {
-        let view = UIView.init(frame: CGRectMake(0, 0, 320, 320))
-        view.backgroundColor = UIColor.blueColor()
-        return view
+   
+        
+        let view2 =  NSBundle.mainBundle().loadNibNamed("QuestionView", owner: nil, options: nil)[0] as! UIView
+        view2.layer.cornerRadius = 20
+        view2.layer.shadowOffset = CGSizeMake(1, 1)
+        view2.layer.shadowColor = UIColor.blackColor().CGColor
+        view2.layer.borderWidth = 0.3
+        view2.layer.borderColor = UIColor.blackColor().CGColor
+        view2.layer.masksToBounds = true;
+        return view2
     }
     
     func koloda(koloda: KolodaView, viewForCardOverlayAtIndex index: UInt) -> OverlayView? {
