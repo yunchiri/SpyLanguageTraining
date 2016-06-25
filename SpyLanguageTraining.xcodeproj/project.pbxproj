@@ -18,6 +18,8 @@
 		04ACD1231D00669200430A63 /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04ACD1221D00669200430A63 /* QuestionView.xib */; };
 		04CDBBAE1CF5E688002F7016 /* QuizCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDBBAD1CF5E688002F7016 /* QuizCollectionViewController.swift */; };
 		04CDBBB01CF5E771002F7016 /* QuizCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDBBAF1CF5E771002F7016 /* QuizCell.swift */; };
+		73E3070B1D1A829900D5B557 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E3070A1D1A829900D5B557 /* Question.swift */; };
+		73E3070D1D1A912E00D5B557 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E3070C1D1A912E00D5B557 /* Quiz.swift */; };
 		89E2A672ACA6D9B2498F2E6E /* Pods_SpyLanguageTraining.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD38BCA5CA8CF8CCF138A4A1 /* Pods_SpyLanguageTraining.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,8 @@
 		04CDBBAD1CF5E688002F7016 /* QuizCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewController.swift; sourceTree = "<group>"; };
 		04CDBBAF1CF5E771002F7016 /* QuizCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCell.swift; sourceTree = "<group>"; };
 		6C909A0A93076605C76175FF /* Pods-SpyLanguageTraining.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyLanguageTraining.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpyLanguageTraining/Pods-SpyLanguageTraining.release.xcconfig"; sourceTree = "<group>"; };
+		73E3070A1D1A829900D5B557 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		73E3070C1D1A912E00D5B557 /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		8D393417C98FC2C7D24D81CA /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92BE274339DD945EF32808B6 /* Pods-SpyLanguageTraining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpyLanguageTraining.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpyLanguageTraining/Pods-SpyLanguageTraining.debug.xcconfig"; sourceTree = "<group>"; };
 		BD38BCA5CA8CF8CCF138A4A1 /* Pods_SpyLanguageTraining.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpyLanguageTraining.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +99,7 @@
 		047B86D51CF1EC1F000E0275 /* SpyLanguageTraining */ = {
 			isa = PBXGroup;
 			children = (
+				73E307091D1A824B00D5B557 /* Controller */,
 				0483EE721D12EBAB00AAC6C9 /* Koloda */,
 				047B86FC1CF35F38000E0275 /* zaza.jpg */,
 				047B86F61CF1F85D000E0275 /* ViewController */,
@@ -133,6 +138,15 @@
 			children = (
 			);
 			name = Koloda;
+			sourceTree = "<group>";
+		};
+		73E307091D1A824B00D5B557 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				73E3070A1D1A829900D5B557 /* Question.swift */,
+				73E3070C1D1A912E00D5B557 /* Quiz.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		76D6AF578DB4C274D0469147 /* Pods */ = {
@@ -309,7 +323,9 @@
 			files = (
 				047B86F81CF1F8B6000E0275 /* QuizViewController.swift in Sources */,
 				04CDBBAE1CF5E688002F7016 /* QuizCollectionViewController.swift in Sources */,
+				73E3070D1D1A912E00D5B557 /* Quiz.swift in Sources */,
 				047B86D91CF1EC1F000E0275 /* ViewController.swift in Sources */,
+				73E3070B1D1A829900D5B557 /* Question.swift in Sources */,
 				04CDBBB01CF5E771002F7016 /* QuizCell.swift in Sources */,
 				047B86D71CF1EC1F000E0275 /* AppDelegate.swift in Sources */,
 			);

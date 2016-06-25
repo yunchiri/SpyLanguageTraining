@@ -8,36 +8,49 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Quiz View Controller-->
+        <!--QuizVC-->
         <scene sceneID="VW7-BP-R7z">
             <objects>
-                <viewController id="XGB-eZ-UN8" customClass="QuizViewController" customModule="SpyLanguageTraining" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="QuizVC" id="XGB-eZ-UN8" customClass="QuizViewController" customModule="SpyLanguageTraining" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bxD-v4-JN5"/>
                         <viewControllerLayoutGuide type="bottom" id="fnF-tw-Fyl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nSB-Xj-XLM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NMe-fa-P3t" customClass="KolodaView" customModule="Koloda">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Cta-pc-xEA"/>
                                     <constraint firstAttribute="height" constant="300" id="aPf-Ix-pGP">
                                         <variation key="widthClass=compact" constant="320"/>
                                     </constraint>
+                                    <constraint firstAttribute="height" constant="300" id="ffI-49-E5U"/>
+                                    <constraint firstAttribute="width" constant="300" id="m0q-Nh-rXF"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="Cta-pc-xEA"/>
                                         <exclude reference="aPf-Ix-pGP"/>
+                                        <exclude reference="ffI-49-E5U"/>
+                                        <exclude reference="m0q-Nh-rXF"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="Cta-pc-xEA"/>
                                         <include reference="aPf-Ix-pGP"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="Cta-pc-xEA"/>
+                                        <exclude reference="aPf-Ix-pGP"/>
+                                        <include reference="ffI-49-E5U"/>
+                                        <include reference="m0q-Nh-rXF"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -48,6 +61,8 @@
                                 <variation key="widthClass=compact" constant="10"/>
                             </constraint>
                             <constraint firstItem="NMe-fa-P3t" firstAttribute="centerX" secondItem="nSB-Xj-XLM" secondAttribute="centerX" id="8Q9-GB-QOM"/>
+                            <constraint firstItem="NMe-fa-P3t" firstAttribute="centerX" secondItem="nSB-Xj-XLM" secondAttribute="centerX" id="s2J-7X-PVm"/>
+                            <constraint firstItem="NMe-fa-P3t" firstAttribute="centerY" secondItem="nSB-Xj-XLM" secondAttribute="centerY" id="xRd-JC-WMV"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -56,6 +71,8 @@
                             <mask key="constraints">
                                 <exclude reference="3T6-OW-iyI"/>
                                 <exclude reference="8Q9-GB-QOM"/>
+                                <exclude reference="s2J-7X-PVm"/>
+                                <exclude reference="xRd-JC-WMV"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -67,6 +84,14 @@
                                 <include reference="8Q9-GB-QOM"/>
                             </mask>
                         </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="3T6-OW-iyI"/>
+                                <exclude reference="8Q9-GB-QOM"/>
+                                <include reference="s2J-7X-PVm"/>
+                                <include reference="xRd-JC-WMV"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="kolodaView" destination="NMe-fa-P3t" id="Ta0-v9-Gc8"/>
@@ -74,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PTb-EV-Lys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1452" y="197"/>
+            <point key="canvasLocation" x="1452" y="196.5"/>
         </scene>
         <!--Quiz Collection View Controller-->
         <scene sceneID="Jcv-M2-Wkt">
